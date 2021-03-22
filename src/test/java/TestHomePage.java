@@ -49,6 +49,17 @@ public class TestHomePage {
         Assert.assertEquals(account.getCreateAccountWithMessage(), "Criar conta com");
     }
 
+    @Test @Ignore("Inform CPF bellow and delete the ignore")
+    public void check_Password_Input_Display_When_UserExists() {
+        page.informYourCPFNumber(""); //Include CPF here!
+        page.clickConfirmar();
+
+        PasswordPage password = new PasswordPage(driver);
+        Assert.assertEquals(password.getInformYourPasswordMessage() ,"Digite sua senha");
+    }
+
+
+
     @After
     public void tearDown(){
         if(driver!= null){
