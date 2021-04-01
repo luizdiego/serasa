@@ -1,6 +1,6 @@
 # SERASA Automation Tests
 
-![alt text](https://www.serasa.com.br/lno/static-webfiles/logo/serasa-white.svg)
+![Screenshot](serasa-logo.png)
 
 Run Automated Testes for UI and API
 
