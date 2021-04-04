@@ -20,4 +20,4 @@ You can check out your version with the following command:
 ## Build
 Run in the source of the application the command bellow to install dependencies:
 
-`mvn clean test`
+`mvn -T 2C surefire:test`
